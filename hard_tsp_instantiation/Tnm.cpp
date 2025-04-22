@@ -10,7 +10,7 @@
 //
 // The instance is output in TSPLIB format to a file named "Tnm<#vertices>.tsp".
 //
-// Use "g++ -std=c++11 Tnm.cpp" to compile this code with gcc.
+// Use "g++ -std=c++11 Tnm.cpp -o Tnm" to compile this code with gcc.
 //
 // Stefan Hougardy and Xianghui Zhong, September 2018
 //
