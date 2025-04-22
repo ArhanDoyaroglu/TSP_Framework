@@ -41,22 +41,22 @@ These are valuable for stress testing solvers. Both instance types are saved in 
 ## SOLVERS:
 -------------------------
 
-Concorde is an exact solver that can process both GEO and EUC\_2D instances. 
+Concorde is an exact solver that can process both GEO and EUC_2D instances. 
 It outputs solution files (`.sol`) and moves them into a cleaned `tours/concorde_tours` directory. Temporary files are automatically deleted.
 
 LKH is a heuristic solver that can support multiple salesmen (mTSP). 
 It accepts known or unknown instances in any format. Users can specify strategies in the `.par` file. It outputs `.tour` files and logs.
 
-GPU ACS uses a parallel version of Ant Colony System. It only accepts EUC\_2D files. 
+GPU ACS uses a parallel version of Ant Colony System. It only accepts EUC_2D files. 
 Before using this solver, ensure GEO files are converted. Outputs are saved in JSON format.
 
 GPU PIHC is a CUDA-based heuristic. It requires the user to select both an initialization strategy and a CUDA thread mapping style. 
-Like ACS, it only accepts EUC\_2D input files and produces `.sol` output files.
+Like ACS, it only accepts EUC_2D input files and produces `.sol` output files.
 
 ## USAGE:
 -------------------------
 
-Before running any solver, make sure to read the README of that solver and compile or configure it if necessary.
+Before running any solver, make sure to read the README of that solver and generater then compile or configure it if necessary.
 Then, generate test instances using the provided generator scripts.
 
 You can also add your own TSP instances to the benchmark folders. 
